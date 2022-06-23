@@ -1,15 +1,13 @@
-import React from "react";
-import classes from  "./header.module.css";
+import React from 'react';
 
-
-function Header ({text}) {
-    return (
-        <ul>
-            <li className={classes.names}>User - {text}</li>
-            <li className={classes.names}>User - {text}</li>
-            <li className={classes.names}>User - {text}</li>
-        </ul>
-    )
+class Header extends React.Component {
+    render() {
+        return (
+            <div>
+                <h1>Header - {this.props.name}</h1>
+            </div>
+        );
+    }
 }
 
 export default Header;
